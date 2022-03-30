@@ -1,0 +1,37 @@
+\documentclass[12pt]{ozuthesis}
+\dissertationfalse
+%\thesisproposalfalse
+% preamble
+\title{MS thesis title}
+\author{Clark Kent}
+\approvaldate{January 1, 2022}
+\school{School of Engineering}
+\department{Department of Computer Science}
+\bibliography{references}
+
+% document body
+\begin{document}
+
+\makeTitlePage{January}{2022}
+\input{approvalPage.tex}
+\makeDedication{For my cousin}
+
+\begin{frontmatter}
+    \input{summary}
+    \input{summary-turkish}
+    \input{acknowledgments}
+    \makeTOC
+    \makeListOfTables
+    \makeListOfFigures
+    \input{abbrevs}
+\end{frontmatter}
+
+\begin{thesisbody}
+    \input{chapters/chapter1}
+    \input{chapters/chapter2}
+    \input{chapters/appendix.tex}
+    \makeBibliography
+    \input{vita}
+\end{thesisbody}
+
+\end{document}
